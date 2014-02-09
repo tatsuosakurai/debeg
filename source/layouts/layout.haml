@@ -9,4 +9,10 @@
     = stylesheet_link_tag "application"
     = javascript_include_tag  "all"
   %body{class: page_classes}
-    = yield
+    .container
+      .row
+        .col-md-6.main_right
+          %h1.logo
+            =image_tag "./images/debeg_logo632x482.png", width: 316, height: 241
+        .col-md-6.main_left
+          = yield
